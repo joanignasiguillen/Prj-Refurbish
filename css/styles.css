@@ -384,8 +384,8 @@
         display:inline-flex;
         border-radius:15px;
         margin: 15px auto;
-        margin-left: 50px; /*imprescindible para que no queden pegados*/
-        margin-right: 50px;/* pendiente ver como eliminar los margin y se siga centrando*/
+        margin-left: 20px; /*imprescindible para que no queden pegados*/
+        margin-right: 20px;/* pendiente ver como eliminar los margin y se siga centrando*/
         overflow:hidden;
         /*align-items: center;*/
     }
@@ -429,7 +429,7 @@
     }
 
     .justify{
-        text-align: justify;
+        text-align:justify;
     }
 
     .spacebetw {/*one in top left and the other in top right*/
@@ -547,6 +547,12 @@
             text-align: justify;
             /*min-width: 80px;*/
         }
+
+    .maxwidth{
+        max-width: 870px;
+        margin:10px auto;
+        padding:14px;
+    }
 
      .formcontainer{
             display:flexbox;
