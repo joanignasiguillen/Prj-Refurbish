@@ -1,0 +1,806 @@
+:root {
+    --fondo-logo: rgb(247, 237, 229);
+    --headerh: 150px;
+    --fontsegoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+
+    *{
+        margin: 0 auto;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    
+    body{
+        background-color: var(--fondo-logo);
+        display:block;
+        margin:0;
+        padding:0;
+        font-family: var(--fontsegoe);
+    }
+
+    header h1, header h3{
+        text-align:center;
+        width: auto;
+        background-color: transparent;
+        justify-content:right;/*centraje horizontal en el navegador*/
+        font-family: Matura MT Script Capitals, Freestyle Script;
+        font-size:28;
+        font-style: italic;
+        /*position: static;*/
+        word-wrap: break-word;
+        opacity: 0.4;
+     }
+
+     header h2 {
+        color:aliceblue;
+        background-color: black;
+        font-family: 'Roboto', sans-serif;;
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+        justify-content: center;
+     } 
+
+    header h4{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight:400;
+        color:rgba(221, 201, 212, 0.9);
+        text-align: justify;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 3px 2px rgba(7, 7, 2, 0.72);
+        opacity:1;
+        margin-right: 151px;
+    }
+
+     header {
+        /*display:block;*/
+        opacity: 0.9;
+        background-color: var(--fondo-logo);
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        width: auto;
+        height: var(--headerh); 
+        /* background-image: url("../img/board_1200-150.png"); */
+        background-image: url("../img/board-650x150.png");
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        position:relative;
+        background-blend-mode:exclusion;/*mezcla el fondo con el color de fondo*/
+        justify-content: center;/*centraje horizontal en el navegador*/     
+    }
+
+    header p {
+        text-align: center;
+    }
+
+    .himgbox{
+        width: auto;
+        height: 170px;
+
+    }
+
+    li p{
+        font-family: var(--fontsegoe);
+        font-size: 14px;
+    }
+
+    li {text-decoration: none;
+        list-style: none;
+        text-align: center;
+    }
+
+    .container{
+        align-items:center;/* centro vertical*/
+        /*display: inline-block;*/
+        float:left;
+        justify-content:left;/*requiere flex*/
+        background-color: black; 
+        margin: 0 auto; 
+        padding: 0; 
+        width: auto;
+        height: var(--headerh); 
+      }
+
+
+    .letra{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .letrarobo{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bolder;
+        color:black;
+        width:auto;
+        padding: 0;
+        margin:0;
+        text-shadow: 2px 2px rgba(190, 201, 42, 0.34);
+        justify-content: center;/*centraje horizontal en el navegador*/
+       
+    }
+
+    .letraroboh{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 60px;
+        font-weight:900;
+        color:green;
+        width:auto;
+        padding: 0;
+        margin:0;
+        text-shadow: 3px 2px rgba(7, 7, 2, 0.72);
+        justify-content: center;/*centraje horizontal en el navegador*/
+        
+    }
+
+    .letrasandh{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 60px;
+        font-weight:900;
+        color:lightgreen;
+        width:auto;
+        padding: 0;
+        margin:0;
+        text-shadow: 3px 2px rgba(7, 7, 2, 0.72);
+        opacity:1;
+        justify-content: center;
+        vertical-align:middle;
+        top:50%;
+        margin-right: 151px;
+    }
+    .letrasand{
+        font-family: 'Quicksand', sans-serif;
+
+    }
+ 
+    footer {
+        background-color: var(--fondo-logo);
+        padding: 40px 0;
+        text-align: center;
+        color:black;
+        margin-top: 10px;
+/*      background-image: linear-gradient(217deg, rgba(255, 166, 0, 0.685),
+        rgba(223, 191, 14, 0.521) 70.71%); */
+        background-image: linear-gradient(217deg, rgba(247, 237, 229, 0.685),
+        rgba(223, 191, 14, 0.521) 70.71%); 
+        }
+
+    .footer-content {
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content:space-between;
+        /*max-width: 1900px;*/
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .footer-content > div {
+        flex:1;/*content=397 1=permite que todos los items flexibles tengan el mismo tamaño, regardless de su contenido*/
+        margin: 0 10px; /* Espacio entre las columnas */
+        text-align: center; 
+        }
+
+    .footer-content h3 {
+        color: rgb(241, 167, 30);
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info p {
+        margin-bottom: 10px;
+    }
+    
+    footer a {text-decoration: none;
+         color:black;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;    
+        color: rgb(136, 136, 136)}
+    
+    footer li { margin-bottom: 5px;
+        list-style-type: none;
+    }
+    
+    .footer-bottom p {
+        float:none;
+        color: #bd7d07;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    
+    footer h4{margin:0 auto;
+        background-color: var(--fondo-logo);
+        color:black;
+    }
+    
+    nav {color:aliceblue;    
+        justify-content: space-between;
+        /*height: auto;
+        max-width: auto;*/
+     } 
+    
+     nav ul {
+        list-style-type: none; 
+        list-style: none;
+        /*display:flex;*/ /*se distribuye auto*/ 
+        display:inline-block;/* si no cabe , se alinea debajo */
+        /*margin:0;*/
+        padding:0;
+        /*display:flex;*/
+        justify-content: space-between;/* los deja en la misma linea*/
+    }
+
+    nav ul.menu {
+        display:inline-block;
+        flex-wrap: wrap;
+        justify-content: center;    
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0 auto;
+        margin-left: 18px;/*36px. no deja margen derecho*/
+        margin-right: 18px;
+        display:inline-block;/*es responsive y se ponen debajo*/
+        /* text-align: right; */
+        /*padding-inline: 18px;*//* no afecta*/
+        padding:30px 0px;/*24px*/
+        /*justify-content: space-between;*/
+        }
+
+
+    nav ul li a {
+        display:block;/* todos igual width*/
+        text-decoration: none; /* elimina el subrayado*/
+        color:rgba(32, 28, 7, 1);
+        background-color: var(--fondo-logo);
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px 0; /* hacemos un rellena en altura de 10 y de 0 en ambos lados */
+        line-height: 26px;
+        width:160px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:14px;
+        font-weight: 400;
+        border: 1px solid rgba(143, 135, 135, 0.637);
+        border-radius: 15px;
+        box-shadow: 2px 2px rgba(77, 77, 77, 0.4);
+        background: linear-gradient(217deg, rgba(255, 166, 0, 0.685),
+         rgba(223, 191, 14, 0.521) 70.71%);
+    }
+
+    nav ul li a:hover{
+        color:aliceblue;
+        background-color: darkorange;
+    }
+ 
+    nav ul li a:active{transform: translate(3px,3px);}
+
+    .activo{/*para dejar el menu marcado*/
+        color:rgb(241, 255, 240);
+        background-color: rgb(110, 110, 110);
+    }
+
+    nav ul li a img {
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: 130px;
+        height: 100px;
+        margin:10px 12px;
+    }
+
+    main {
+        text-align: center;
+        max-width: 1000px; 
+        width:auto; 
+        margin:auto; /*se ajusta al ancho y se actualiza según ampliamos o reducimos*/
+    }
+
+    main h1{   
+        font-size: 30px;
+    }
+
+    main p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mainothers {
+        text-align: center;
+        max-width: 870px; 
+        width:auto; 
+        margin:auto; /*se ajusta al ancho y se actualiza según ampliamos o reducimos*/
+    }
+
+    .mainothers h1{   
+        font-size: 30px;
+    }
+
+    .mainothers p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imgh{
+        float:left;
+        display: block;
+        opacity: 0.3;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        height: var(--headerh); 
+        width:auto;
+        position: static; 
+        margin:0 auto;
+        padding:0;
+        justify-content: center;
+        border-radius: 0;
+    }
+    
+    .imglogin{
+        float:left;
+        opacity: 0.72;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: 50px;
+        height: 50px;
+        margin-right: 0px;
+        margin-top: 60px;
+        margin-left: 40px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .imglogin:hover{
+        opacity: 1;
+       
+    }
+
+    .inglogin:active{
+         transform: translate(3px 3px);
+    }
+
+    img {
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: 340px;
+        height: 210px;
+        margin:10px 12px;
+    }
+
+ /*    img:hover {
+        transform: translate(3px 3px);
+    } */
+
+    .imgbox{
+        /*display:flex;*/
+        display:inline-flex;
+        border-radius:15px;
+        margin: 15px auto;
+        margin-left: 50px; /*imprescindible para que no queden pegados*/
+        margin-right: 50px;/* pendiente ver como eliminar los margin y se siga centrando*/
+        overflow:hidden;
+        /*align-items: center;*/
+    }
+
+    .imgbox img{
+        /*margin: 5px auto;*/
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: 340px;
+        height: 210px;
+        margin:10px 12px;
+    }
+
+    .imgbox:hover{
+        transform: scale(1.1);
+    }
+
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .centerxy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .center{
+        display: grid;
+        place-items: center;
+    }
+
+
+    .centrar {
+        text-align: center;
+        margin: auto;
+    }
+
+    .justify{
+        text-align: justify;
+    }
+
+    .spacebetw {/*one in top left and the other in top right*/
+        display: flex;/*or flexbox. space-evenly center spaces in all*/
+        justify-content: space-between; /* Can be changed in the live sample */
+      }
+
+    @media screen and (max-width: 818px){
+        img, .imgbox img{
+            width: 250px;
+            height: 170px;
+        }
+        header h4{font-size: 14px;}
+        .letrasandh{font-size: 30px;}
+    }
+    @media screen and (max-width: 640px){
+        img, .imgbox img{
+            width: 200px;
+            height: 125px;
+        }
+        header h4{font-size: 12px;margin-right: 70px;}
+        .letrasandh{font-size: 22px;margin-right: 70px;}
+    }
+    @media screen and (max-width: 540px){
+        img, .imgbox img{
+            width: 170px;
+            height: 105px;
+        }
+        header h4{font-size: 12px;margin-right: 70px;}
+        .letrasandh{font-size: 22px;margin-right: 70px;}
+    }    
+    @media screen and (max-width: 480px){
+        img, .imgbox img{
+            width: 150px;
+            height: 85px;
+        }
+        header h4{font-size: 12px;margin-right: 70px;}
+        .letrasandh{font-size: 22px;margin-right: 70px;}
+    }
+
+    @media screen and (max-width: 440px){
+        img .imgbox img{
+            width: 90px;
+            height: 55px;
+        } 
+        header h4{font-size: 12px;margin-right: 30px;}
+        .letrasandh{font-size: 15px;margin-right: 30px;}
+    }
+
+    @media screen and (max-width: 380px){
+        img .imgbox img{
+            margin-left:0;
+            margin-right: 0;
+            width: 65x;
+            height: 35px;
+        }
+    }
+
+    @media screen and (max-width: 275px){
+        img .imgbox img{
+                margin-left:0;
+                margin-right: 0;
+                width: 40px;
+                height: 25px;
+        }
+    }         
+        
+    .footer-content > div {
+            margin: 0 0; /* Espacio entre las columnas */
+    }    
+    
+    .gimg{/*grupo de imagenes*/
+        width: 195px;
+        height: 195px;
+        margin: 10px;
+    }
+
+    form{
+        background-color: var(--fondo-logo);
+        padding: 15px 15px;
+        width:fit-content;/* se ajusta */
+    }
+    
+/*     form input {border-radius: 15px; padding:6px; margin-bottom: 5px;
+        margin-left: 20px; text-align: left;margin-right: 20px;
+        border:1px solid rgb(102, 102, 102)}
+ */ 
+    input::placeholder{color:rgb(180,180,180)}
+
+    input[type="radio"]{width:auto;height:auto;padding:0;
+         margin:6px 4px 6px 20px;}
+
+    input[type="checkbox"]{width:auto;height:auto;padding:0;
+         margin:6px 4px 6px 34px;}
+   
+
+    fieldset{
+        border-radius: 26px;
+        border:2px solid lightskyblue;
+        padding: 30px 30px;
+        margin: auto;
+        text-align: left;
+        min-width: 80px;
+        }
+
+     .container_inicio{max-width: 840px;
+            margin: 10px auto;
+            position: relative;
+            width: 100%;  
+            height: auto;
+            border: 1px solid #2f75df;
+            border-radius: 26px;   
+            padding: 20px 20px 20px 20px; 
+            /*background-color: #f5eee1;*/
+            text-align: justify;
+            /*min-width: 80px;*/
+        }
+
+     .formcontainer{
+            display:flexbox;
+            align-items: center;
+            margin-bottom: 5px;
+            align-items: center;
+            margin:0 auto;
+        }
+    
+
+    .fieldblack{border:2px solid rgb(53, 53, 53);}
+    .fcontainer{
+        display:flex;
+        border:2px solid rgb(95, 95, 95);
+    }
+
+    .fieldred{border: 2px solid red;}
+    .fieldorange{border: 2px solid orange;}
+    
+    legend{color:black;}
+    
+    label{display:inline-flex;
+        color:black;
+        width: 80px;/*Variar*/
+        font-weight: bold;}/* inline-block*/
+    
+    .label1{width:70px;margin-left: 0;margin-right: 6px;}
+    .label2{width:90px;margin-left: 10px;}
+
+    .lblchk{width:auto;}
+    
+    form textarea {width: 100%; height: 150px; padding: 12px 20px; border-radius: 15px;
+        box-sizing: border-box; border: 2px solid #ccc;resize:none;}
+    
+    button{/*requiere container display:flex*/
+        border-radius:15px;  
+        display:inline-block; /* Permite el centraje en la misma linea*/
+        margin-left: 50px; /*imprescindible para que no queden pegados*/
+        margin-right: 50px;/* pendiente ver como eliminar los margin y se siga centrando*/
+        margin-top: 6px; /* separacion cuando se situan uno debajo el otro.*/
+        margin-bottom: 6px;
+        line-height: 26px;
+        background-color: bisque;
+        color:black;       
+        border:2px solid green;
+        text-align: center;
+        min-width:160px;
+        /*justify-content:space-between;/*centra el texto*/
+        /*margin: 0 auto; */ /*imprescindible para que se centre con flex.*/
+        /*eliminar margin 0 auto para que se centre con inline-block.*/
+        padding: 4px 14px;/*y x*/
+        font-size: 16px;
+        cursor: pointer;
+        /*align-items:center;*/
+        box-shadow: 3px 4px rgba(77, 77, 77, 0.4);
+    }
+
+    /*Ejemplo para llamar a otra página:*/
+    /*<button type="button" onclick="location.href='https://www.facebook.com'">Ir a facebook</button>*/
+    /*<button type="button" onclick="location.href='../index.html'">página de inicio</button>*/
+    
+    button:hover{
+        color:bisque;
+        background-color: #4CAF50;
+    }
+
+    button:active{
+        transform: translate(3px,3px);
+    }
+
+    .btnbl {
+        background-color: white;
+        color: black;
+        border: 2px solid #0d1ad8;
+    }
+
+    .btnbl:hover {
+        background-color: #0d1ad8;
+        color: bisque;
+    }
+
+    .btnrd {
+        background-color: bisque;
+        color: black;
+        border: 2px solid red;
+    }
+
+    .btnrd:hover {
+        background-color: red;
+        color: bisque;
+    }
+
+    select{border-radius:15px;margin-bottom:10;border:1px inset rgb(104, 103, 103);width:184px;padding:6px;margin-left: 20px;}/*no hace caso del padding*/
+ 
+
+/*form y controles*/
+form input[type="submit"],
+form input[type="reset"] {
+    width: 100px;
+    padding: 10px;
+    display: inline-block;
+    border:2px solid green;
+    border-radius: 15px;
+    background-color:bisque;
+    color: black;
+    margin: 10px auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+
+}
+
+form input[type="reset"] {
+    border: 2px solid red;
+    background-color: bisque;
+    color: black;
+}
+
+form input[type="submit"]:hover{background-color: #4CAF50}
+form input[type="reset"]:hover {background-color: red;}
+
+form input[type="submit"]:active,
+form input[type="reset"]:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;}
+
+form label {
+    width: 82px;/* cambiar para ajustar*/
+    font-weight:500;/* bold;*/
+    display: inline-block;
+    margin: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea,
+form input[type="password"] {
+    width: 200px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: rgb(247, 247, 239);
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    width: 94%;
+    height: 200px;
+    padding: 15px;
+    margin: 20px;
+    resize: none;
+}
+
+form input[type="radio"] {
+    width: 20px;
+    display: inline-block;
+    background-color: rgb(247, 247, 239);
+    margin-bottom: 5px;
+}
+
+form input[type="checkbox"] {
+    width: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+
+/*     footer h4{
+        background-color: white;
+        color: black;
+        font-family: sans-serif;
+        font-size: 14px;
+        text-align: center;
+        padding: 26px;   
+    } */
+
+    .hifrm{
+        /*height:160px;*/
+        /*width:auto;*//*100%;*/
+        margin: 0;
+        
+    }
+
+    .fifrm{
+        height: 170px;
+        width:100%;
+
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      
+      .gallery article {
+        background-color: var(--fondo-logo);
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .gallery img {
+        width: 250px;
+        height: 160px;
+        margin-bottom: 10px;
+      }
+      
+      .gallery p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      .gallery article:hover {
+        transform: scale(1.1);
+        border: 1px solid black;    
+        background-color: #d8d8d8;
+      }
+    
+      .newsletter form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    
+/* clases para inyectar */
+/*listado:*/
+.client{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid yellow;
+    background-color: #f5dca9;   
+}
+
+    #circle span{
+        position: absolute;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 140px;
+        font-size: 25px;
+        width: 20px;
+        text-align: center;
+        transform-origin: bottom center;        
+      }

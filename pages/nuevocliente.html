@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Juan Guillen">
+	<meta name="description" content="Reacondicionamiento de ordenadores y monitores">
+	<meta name="keywords" content="reacondicionado, html, ofertas, equipos,
+     informatica, portatil, portatiles, sobremesa, monitores, gamers, refurbish">
+	<title>Reacondicionamiento de equipos informáticos</title>
+	
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    
+    <!-- Google Fonts: Quicksand, Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Quicksand:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<link rel="icon" href="../img/icon.png">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img class="imglogin" src="../img/inicioT.png" alt="foto Inicio">
+        </a>
+        <a href="./login.html">
+            <img class="imglogin" src="../img/loginT.png" alt="foto login">
+        </a>
+        <a href="./Card.html">
+            <img class="imglogin" src="../img/carrito.png" alt="foto carrito">
+        </a>
+        <div class="center"><h3 id="circle">2on Life</h3></div>
+      
+        <!-- <img class="imgh" src="./img/productos.png" alt="foto logo">      
+        <h1 class="letrasandh"></h1>
+        <h4>Las mejores ofertas del mercado y garantizados durante dos años!</h4> -->
+     </header>
+    <main class="mainothers">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../img/monitor-home.png" alt="foto inicio">
+                        <h3>Inicio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="./laptops.html">
+                        <img src="../img/laptop.jpeg" alt="foto portatil">
+                        <h3>Portátiles</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="./desktops.html">
+                        <img src="../img/desktop.jpeg" alt="foto Sobremesa">
+                        <h3>Sobremesa</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Monitors.html">
+                        <img src="../img/monitor.jpg" alt="foto Monitores">
+                        <h3>Monitores</h3>
+                    </a>
+                </li>                                               
+            </ul>
+        </nav>
+        <div class="container_inicio">
+            <div class="centrar">
+                <h2>Nuevo Cliente</h2>
+            </div>
+            <div>
+              <form id="nuevoclienteform" autocomplete="on" onsubmit="agregarcliente()"> <!-- Añade el cliente al pulsar el boton submit -->  
+                <fieldset>
+                    <legend> Datos Cliente</legend>
+                    <label for="Usuario">Usuario: </label>        
+                    <input type="text" 
+                           name="usuario" 
+                           title="Debe introducir entre 4 y 20 caracteres sin espacios"
+                           placeholder="Ej. GarciaLopez o correo@mail.com" 
+                           id="usuario"
+                           required
+                           pattern="[0-9A-Za-zñÑçÇ]{4,20}"/>
+
+                           <label for="password">Contraseña:</label>
+                           <input type="password"
+                           name="password"
+                           id="password"
+                           value=""
+                           title="Debe contener al menos un número, una mayúscula, una minúscula y 8 caracteres como mínimo y 15 maximo."
+                           required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}"/><br>                   
+                           <!-- pattern="[A-Za-z0-9!?-]{8,12}" -->
+                    <label for="nombre">Nombre:</label>
+                    <input  type="text"
+                            name="nombre" 
+                            title="Debe introducir entre 3 y 20 caracteres"
+                            value=""
+                            id="nombre"
+                            placeholder="Nombre Cliente" 
+                            required pattern="[A-Za-z ñÑçÇ]{3,20}"/>  
+        
+                    <label for="repita">confirma:</label>
+                    <input type="password"
+                            name="confirma"
+                            id="confirma"
+                            value=""
+                            title="Debe contener al menos un número, una mayúscula, una minúscula y 8 caracteres como mínimo."
+                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/><br>                   
+                     
+                    <label for="apellidos">Apellidos: </label>        
+                    <input type="text" 
+                           name="apellidos" 
+                           title="Debe introducir entre 4 y 50 caracteres"
+                           placeholder="Ej. Garcia Lopez" 
+                           id="apellidos"
+                           required
+                           pattern="[A-Za-z ñÑçÇ]{4,50}"/>
+
+                    <label for="direccion">Dirección: </label>
+                    <input type="text"    
+                           name="direccion"
+                           title="Debe introducir como máximo 50 caracteres"
+                           placeholder="Avda Roma, 35. piso 3-4. 08012. Barcelona"
+                           id="direccion"
+                           required>
+                           <!-- pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{4,50}" -->
+                           <!-- error en el pattern -->
+
+                    <label for="email">E-mail: </label>
+                    <input type="email"
+                           name="email"
+                           id="email"
+                           placeholder="correo@mail.com" 
+                           autocomplete="on"
+                           value=""
+                           required>
+                           <!-- pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" -->
+                           <!-- error en el pattern -->
+                           
+                           <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> --> <!-- Genera error -->
+                           <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->                   
+                    <label for="telefono">Telefono: </label>
+                    <input type="text"
+                           name="telefono"
+                           title="Debe introducir 9 digitos"
+                           id="telefono"
+                           placeholder="Ej. 931998205"
+                           required 
+                           pattern="[0-9]{9}">
+                    <h5 class="centrar"><br><input type="checkbox"
+                           name="accept" id="accept" checked="checked">He leido y acepto las condiciones y las políticas de privacidad</h5>
+
+                </fieldset><br>
+                <fieldset>
+                    <legend> Enviar Formulario </legend>
+                    <div class="centrar">
+<!--                    <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar" onclick="agregarcliente()"> --> <!-- Al hacer click en submit va a generar el evento form onsubmit -->
+                        <button class="btnrd" type="reset">Borrar</button>
+                        <button type="submit" onclick="agregarcliente()">Enviar</button>
+                    </div>
+                </fieldset>
+              </form>
+            </div>
+        </div><br>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <p><strong>Dirección:</strong> Calle Bartomeu Pi, 39, 1-4. 08014 Barcelona</p>
+                <p><strong>Teléfono:</strong> +34 628305158</p>
+                <p><strong>Email:</strong> info@second-life.es</p>
+                <div>
+                    <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i> Facebook</i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i> Twitter</i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i> Instagram</i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Mapa del sitio</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./nuevoCliente.html">Nuevo Cliente</a></li>
+                    <li><a href="./laptops.html">Portátiles</a></li>
+                    <li><a href="./desktops.html">Sobremesa</a></li>
+                    <li><a href="./Monitors.html">monitores</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                 </ul>
+            </div>
+            
+            <div>
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li><a href="https://anobium.es/blog/reciclaje-material-informatico" target="_blank">Reciclamos para no contaminar</a></li>
+                    <li><a href="https://natura-activa.com/reciclaje-de-ordenadores-y-material-informatico-en-barcelona/" target="_blank">Especialistas en el reciclaje en Barcelona</a></li>
+                    <li><a href="https://www.recicla.me/site/categoria_residuo.aspx?ID=15" target="_blank">Venta de material reciclado</a></li>
+                    <li><a href="https://fece.org/blog/2022/03/30/como-se-reutilizan-los-residuos-informaticos/" target="_blank">Como se reutiliza el material informático</a></li>
+                </ul>
+            </div>                   
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Second-Life refurbish. Todos los derechos reservados.</p>
+        </div>                 
+    </footer>        
+</body>
+</html>
